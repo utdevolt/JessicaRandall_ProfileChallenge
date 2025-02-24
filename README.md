@@ -26,7 +26,8 @@ The model includes hover feature in the social network links.
 ![imagen](./social-links-profile-main/design/destkop-design.jpg)
 
 Mobile design: 375 px
-![image](./social-links-profile-main/design/mobile-design.jpg)
+
+![image](./social-links-profile-main/design/Sin%20título.png)
 
 ## Live URL
 - https://utdevolt.github.io/JessicaRandall_ProfileChallenge/
