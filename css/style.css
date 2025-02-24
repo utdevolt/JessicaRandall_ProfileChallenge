@@ -1,64 +1,138 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body  {
   background-color: hsl(0, 0%, 8%);
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif
-}
-  
-main {
+  width: 100%;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  /* padding: 20px; */
+
 }
 
-div {
-  background-color: hsl(0, 0%, 12%);
-  width: 375px;
+#root {
+  background-color: chocolate;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* overflow: auto; */
+  
+}
+
+
+#page-wrapper {
+  /* background-color: red; */
+  width: 384px;
+  height: 640px;
+
   padding: 30px;
   text-align: center;
-  border-radius: 16px;
+  border-radius: 14px;
+
+  overflow: auto;
 }
 
-img {
-  width: 80px;
-  height: 80px;
+/* #page-wrapper > main */
+#page-wrapper main {
+  /* background-color: orangered; */
+  width: 100%;
+  height: 255px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* #page-wrapper > main > profile-img*/
+#profile-img {
+  /* background-color: chocolate; */
+  width: 100%;
+  height: 93px;
+}
+
+#profile-img > img {
+  width: 93px;
+  height: 93px;
   border-radius: 50%;
 }
 
-h1 {
-  font-size: 24px;
-  margin-top: 20px;
+/* #page-wrapper > main > profile-info*/
+#profile-info {
+  /* background-color: green; */
+  width: 100%;
+  height: 162px;
 }
 
-h2 {
-  color: hsl(75, 94%, 57%);
-  font-size: 14px;
-  margin-top: 10px;
-}
-
-p {
-  font-size: 14px;
+#profile-info > h1 {
+  /* background-color: goldenrod; */
   margin-top: 30px;
-  margin-bottom: 20px;
+
+  font-size: 24px;
 }
 
-ul  {
+#profile-info > h2 {
+  /* background-color:blue; */
+  margin-top: 10px;
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#profile-info > p {
+  /* background-color: blueviolet; */
+  margin-top: 30px;
+
+  font-weight: 400;
+}
+
+
+/* #page-wrapper > ul */
+#page-wrapper #links  {
+  /* background-color:burlywood; */
+  width: 100%;
+  height: 325px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  gap: 15px;
+
   list-style: none;
+  /* overflow: auto; */
+}
+
+ul > li {
+  background-color: beige;
+  width: 100%;
+  height: 20%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 ul > li > a {
+
   display: block;
+
   text-decoration: none;
   color: white;
-  padding: 15px;
-  margin-top: 20px;
   background-color: hsl(0, 0%, 20%);
   border-radius: 15px;
+
+  padding: 17px;
+
+  font-weight: 700;
   
 } 
 
@@ -66,3 +140,131 @@ ul > li > a:hover {
   background-color: hsl(75, 94%, 57%);
   color: black;
 }
+
+/* MOBILE 375px */
+/* MOBILE 375px */
+/* MOBILE 375px */
+/* MOBILE 375px */
+/* MOBILE 375px */
+/* MOBILE 375px */
+/* MOBILE 375px */
+/* MOBILE 375px */
+@media only screen and (236px<width <= 375px) {
+  #page-wrapper {
+    background-color: red;
+    width: 90%;
+    height: 590px;
+  }
+  
+  /* #page-wrapper > main */
+  #page-wrapper main {
+    background-color: orangered;
+    width: 100%;
+    height: 240px;
+  }
+  
+  
+  #profile-info > h1 {
+    background-color: goldenrod;
+
+    font-size: 20px;
+  }
+  
+  #profile-info > h2 {
+    background-color:blue;
+    font-size: 12px;
+  }
+  
+  #profile-info > p {
+    background-color: blueviolet;
+    font-size: 12px;
+  }
+  
+  
+  /* #page-wrapper > ul */
+  #page-wrapper #links  {
+    background-color:burlywood;
+    width: 100%;
+    height: 290px;
+    
+    font-size: 14px;
+    gap: 14px;
+    /* overflow: auto; */
+  }
+  
+
+  ul > li > a {
+    border-radius: 10px;
+    padding: 15px;
+  } 
+  
+}
+
+
+
+
+
+@media only screen and (width <= 236px) {
+  
+
+
+  #page-wrapper {
+    background-color: red;
+    width: 90%;
+    height: 590px;
+
+    /* overflow: auto; */
+  }
+  
+  /* #page-wrapper > main */
+  #page-wrapper main {
+    background-color: orangered;
+    /* width: 153px; */
+    width: 100%;
+    height: 240px;
+    /* overflow: auto; */
+
+  }
+  
+  #profile-info > h1 {
+    background-color: goldenrod;
+
+    font-size: 20px;
+  }
+  
+  #profile-info > h2 {
+    background-color:blue;
+    font-size: 12px;
+  }
+  
+  #profile-info > p {
+    background-color: blueviolet;
+    font-size: 12px;
+  }
+  
+  
+  /* #page-wrapper > ul */
+  #page-wrapper #links  {
+    background-color:burlywood;
+    /* width: 153px; */
+    width: 100%;
+    height: 290px;
+
+    font-size: 14px;
+    gap: 14px;
+
+  }
+  
+
+  ul > li > a {
+    border-radius: 10px;
+    padding: 15px;
+  } 
+  
+}
+
+
+
+
+
+
